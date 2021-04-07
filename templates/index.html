@@ -4,7 +4,7 @@
 <html lang="en">
 
 <head>
-	<title>Olimpia</title>
+	<title>EuroGuide</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="Travello template project">
@@ -30,13 +30,12 @@
 					<div class="col">
 						<div class="header_content d-flex flex-row align-items-center justify-content-start">
 							<div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
-								<div class="logo"><a href="index.html">Olimpia Pater</a></div>
+								<div class="logo"><a href="index.html">Olimpia</a></div>
 								<nav class="main_nav">
 									<ul class="d-flex flex-row align-items-start justify-content-start">
 										<li class="active"><a href="index.html">Home</a></li>
-										<li><a href="about.html">About us</a></li>
-										<li><a href="#">Services</a></li>
-										<li><a href="news.html">News</a></li>
+										<li><a href="destinations.html">Destinations</a></li>
+										<li><a href="itinerary.html">Itinerary</a></li>
 										<li><a href="contact.html">Contact</a></li>
 									</ul>
 								</nav>
@@ -80,9 +79,8 @@
 			<div class="menu_content">
 				<ul>
 					<li><a href="inex.html">Home</a></li>
-					<li><a href="about.html">About us</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="news.html">News</a></li>
+					<li><a href="destinations.html">Destinations</a></li>
+					<li><a href="itinerary.html">Itinerary</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</div>
@@ -117,7 +115,7 @@
 									<div class="col">
 										<div class="home_slider_content">
 											<div class="home_title">
-												<h2>Today's weather</h2>
+												<h2>EuroGuide</h2>
 											</div>
 										</div>
 									</div>
@@ -136,7 +134,7 @@
 									<div class="col">
 										<div class="home_slider_content">
 											<div class="home_title">
-												<h2>Today's weather</h2>
+												<h2>EuroGuide</h2>
 											</div>
 										</div>
 									</div>
@@ -155,7 +153,7 @@
 									<div class="col">
 										<div class="home_slider_content">
 											<div class="home_title">
-												<h2>Today's weather</h2>
+												<h2>EuroGuide</h2>
 											</div>
 										</div>
 									</div>
@@ -223,7 +221,7 @@
 										<div class="intro_content">
 											<div class="intro_title">Top Destinations</div>
 											<div class="intro_subtitle">
-												<p>Nulla pretium tincidunt felis, nec.</p>
+												<p>Choose your next destination</p>
 											</div>
 										</div>
 									</div>
@@ -235,9 +233,9 @@
 										<div class="intro_icon"><img src="{% static 'images/wallet.svg' %}" alt="">
 										</div>
 										<div class="intro_content">
-											<div class="intro_title">The Best Prices</div>
+											<div class="intro_title">The Best Recommendations</div>
 											<div class="intro_subtitle">
-												<p>Sollicitudin mauris lobortis in.</p>
+												<p>Find out what you can do</p>
 											</div>
 										</div>
 									</div>
@@ -249,9 +247,9 @@
 										<div class="intro_icon"><img src="{% static 'images/suitcase.svg' %}" alt="">
 										</div>
 										<div class="intro_content">
-											<div class="intro_title">Amazing Services</div>
+											<div class="intro_title">Plan Your Trip</div>
 											<div class="intro_subtitle">
-												<p>Nulla pretium tincidunt felis, nec.</p>
+												<p>Make your own itinerary</p>
 											</div>
 										</div>
 									</div>
@@ -270,7 +268,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col text-center">
-						<div class="section_subtitle">simply amazing places</div>
+						<div class="section_subtitle">simply amazing European places</div>
 						<div class="section_title">
 							<h2>Popular Destinations</h2>
 						</div>
@@ -285,7 +283,7 @@
 							<!-- Destination -->
 							<div class="destination item">
 								<div class="destination_image">
-									<img src="{{baseUrl}}/{{dest.img}}" alt="">
+									<img src="{{dest.img.url}}" alt="">
 
 									{% if dest.offer %}
 									<div class="spec_offer text-center"><a href="#">Special Offer</a></div>
@@ -316,9 +314,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col text-center">
-						<div class="section_subtitle">simply amazing places</div>
+						<div class="section_subtitle">simply amazing European places</div>
 						<div class="section_title">
-							<h2>Testimonials</h2>
+							<h2>You said ... </h2>
 						</div>
 					</div>
 				</div>
@@ -331,42 +329,37 @@
 
 								<!-- Slide -->
 								<div class="owl-item text-center">
-									<div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-										lobortis dolor. Cras placerat lectus a posuere aliquet. Curabitur quis vehicula
-										odio.</div>
+									<div class="testimonial">Best app I've ever used!</div>
 									<div class="testimonial_author">
 										<div
 											class="testimonial_author_content d-flex flex-row align-items-end justify-content-start">
-											<div>john turner,</div>
-											<div>client</div>
+											<div>Sylan,</div>
+											<div>backpacker</div>
 										</div>
 									</div>
 								</div>
 
 								<!-- Slide -->
 								<div class="owl-item text-center">
-									<div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-										lobortis dolor. Cras placerat lectus a posuere aliquet. Curabitur quis vehicula
-										odio.</div>
+									<div class="testimonial">I've spent over 3 months travelling around Europe and thanks to this website
+										I've managed to see the best places! I would definitely recommend! </div>
 									<div class="testimonial_author">
 										<div
 											class="testimonial_author_content d-flex flex-row align-items-end justify-content-start">
-											<div>john turner,</div>
-											<div>client</div>
+											<div>Karolina,</div>
+											<div>travelling on my own</div>
 										</div>
 									</div>
 								</div>
 
 								<!-- Slide -->
 								<div class="owl-item text-center">
-									<div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-										lobortis dolor. Cras placerat lectus a posuere aliquet. Curabitur quis vehicula
-										odio.</div>
+									<div class="testimonial">Best way to create my own itinerary and access it on the go</div>
 									<div class="testimonial_author">
 										<div
 											class="testimonial_author_content d-flex flex-row align-items-end justify-content-start">
-											<div>john turner,</div>
-											<div>client</div>
+											<div>Magda,</div>
+											<div>business traveller</div>
 										</div>
 									</div>
 								</div>
